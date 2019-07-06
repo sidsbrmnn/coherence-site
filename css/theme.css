@@ -1,2 +1,107 @@
+body {
+  font-family: Nunito, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.text-dark {
+  color: #010b1f !important;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.2rem #a2c2fc !important;
+}
+
+section {
+  padding: 6rem 0 !important;
+}
+
+section.landing {
+  padding-top: 3rem !important;
+}
+
+.navbar {
+  padding-top: 0.75rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+}
+
+.navbar .nav-item {
+  margin-top: 0.4rem;
+}
+
+.navbar .nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: rgba(1, 11, 31, 0.6) !important;
+}
+
+.navbar .nav-link:hover {
+  color: rgba(1, 11, 31, 0.8) !important;
+}
+
+.navbar .nav-link.active {
+  color: #010b1f !important;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.landing-text {
+  display: block;
+  margin-top: -0.75rem;
+  font-size: 1.1rem;
+  color: rgba(1, 11, 31, 0.75);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.landing-desc {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #010b1f;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 2;
+  color: #010b1f;
+}
+
+.section-heading::after {
+  content: "";
+  opacity: 0.75;
+  z-index: -1;
+  border-bottom: 0.25rem solid #085cf7;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.btn-primary {
+  background-color: #042e7b;
+  border-color: #042e7b;
+}
+
+.btn-primary:hover {
+  background-color: #053794;
+  border-color: #053794;
+}
+
+footer {
+  padding: 5rem 0 !important;
+  background: #010611;
+}
 
 /*# sourceMappingURL=theme.css.map */

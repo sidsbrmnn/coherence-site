@@ -1,0 +1,103 @@
+$primary: hsl(219, 93.7, 25);
+$dark: hsl(219, 93.7, 6.25);
+$darker: hsl(219, 93.7, 3.5);
+$lighter: hsl(219, 93.7, 75);
+$light: hsl(219, 93.7, 50);
+
+body {
+  font-family: Nunito, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.text-dark {
+  color: $dark !important;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.2rem hsl(219, 93.7, 81.25) !important;
+}
+
+section {
+  padding: 6rem 0 !important;
+  &.landing {
+    padding-top: 3rem !important;
+  }
+}
+
+.navbar {
+  padding-top: 0.75rem;
+  font-weight: 700;
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+  .nav-item {
+    margin-top: 0.4rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: rgba($color: $dark, $alpha: 0.6) !important;
+    &:hover {
+      color: rgba($color: $dark, $alpha: 0.8) !important;
+    }
+    &.active {
+      color: $dark !important;
+    }
+  }
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.landing-text {
+  display: block;
+  margin-top: -0.75rem;
+  font-size: 1.1rem;
+  color: rgba($color: $dark, $alpha: 0.75);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.landing-desc {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: $dark;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 2;
+  color: $dark;
+  &::after {
+    content: "";
+    opacity: 0.75;
+    z-index: -1;
+    border-bottom: 0.25rem solid $light;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0.75rem;
+    transform: translateX(-50%);
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: hsl(219, 93.7, 30);
+    border-color: hsl(219, 93.7, 30);
+  }
+}
+
+footer {
+  padding: 5rem 0 !important;
+  background: $darker;
+}
