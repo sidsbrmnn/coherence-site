@@ -145,4 +145,8 @@ section {
 footer {
   padding: 5rem 0 !important;
   background: $darker;
+  .footer-brand {
+    width: 64px;
+    height: auto;
+  }
 }
