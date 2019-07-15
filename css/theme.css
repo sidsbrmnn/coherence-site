@@ -160,4 +160,9 @@ footer {
   background: #010611;
 }
 
+footer .footer-brand {
+  width: 64px;
+  height: auto;
+}
+
 /*# sourceMappingURL=theme.css.map */
