@@ -14,6 +14,10 @@ body {
   color: $dark !important;
 }
 
+.text-primary {
+  color: $primary !important;
+}
+
 *:focus {
   box-shadow: 0 0 0 0.2rem hsl(219, 93.7, 81.25) !important;
 }
