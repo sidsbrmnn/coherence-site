@@ -96,46 +96,23 @@ section {
   }
 }
 
-.courses-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .card-courses {
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-  transition: 50ms ease-in;
-  &:nth-child(even) {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  li {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
   }
   &.big {
+    z-index: 100;
     transform: scale(1);
-  }
-  .card-header {
-    font-weight: 600;
-    font-size: 2rem;
-    background: $white !important;
-  }
-  .card-body li {
-    padding: 0.75rem 0;
+    box-shadow: none;
   }
 }
 
 @media (min-width: 992px) {
-  .courses-flex {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .card-courses {
-    &:nth-child(even) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    &.big {
-      transform: scale(1.1);
-      z-index: 100;
-    }
+  .card-courses.big {
+    transform: scale(1.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   }
 }
 
